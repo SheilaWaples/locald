@@ -1,6 +1,6 @@
 class ChargesController < ApplicationController
    before_action :amount_to_be_charged
-    # before_action :set_description
+     before_action :description
 
   def new
   end
@@ -27,7 +27,7 @@ class ChargesController < ApplicationController
     end
     
     def description
-      @description = "Unique Experience"
+      @description = "Chinatown Food Tour"
     end
 
     def thanks

@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'bootstrap'
 gem 'carrierwave'
+gem 'mini_magick'
 gem 'stripe'
 gem 'dotenv-rails', :groups => [:development, :test]
 
