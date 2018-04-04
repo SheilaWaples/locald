@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @experience.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @experience.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @experience.price %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @experience.image %>
+</p>
+<%= link_to 'Payment', new_charge_path %>
+<%= link_to 'Edit', edit_experience_path(@experience) %> |
+<%= link_to 'Back', experiences_path %>
