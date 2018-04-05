@@ -2,6 +2,8 @@ class ExperiencesController < ApplicationController
   before_action :set_experience, only: [:show, :edit, :update, :destroy]
   # before_action :authenticate_user!
 
+  
+
   # GET /experiences
   # GET /experiences.json
   def index
@@ -24,9 +26,8 @@ class ExperiencesController < ApplicationController
 
   # POST /experiences
   # POST /experiences.json
-  def create
+  def create  
     @experience = Experience.new(experience_params)
-
     respond_to do |format|
       if @experience.save
         format.html { redirect_to @experience, notice: 'Experience was successfully created.' }
@@ -70,6 +71,6 @@ class ExperiencesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def experience_params
-      params.require(:experience).permit(:name, :description, :price, :image)
+      params.require(:experience).permit(:name, :description, :price, :image, :user_id)
     end
 end

@@ -17,7 +17,7 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @experience.image %>
+  <%= image_tag @experience.image.thumb.url %>
 </p>
 <%= link_to 'Payment', new_charge_path %>
 <%= link_to 'Edit', edit_experience_path(@experience) %> |

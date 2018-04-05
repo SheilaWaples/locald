@@ -1,6 +1,7 @@
 class ChargesController < ApplicationController
    before_action :amount_to_be_charged
      before_action :description
+   
 
   def new
   end

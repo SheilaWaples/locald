@@ -1,6 +1,5 @@
 <h1>Editing Experience</h1>
 
 <%= render 'form', experience: @experience %>
-
-<%= link_to 'Show', @experience %> |
+<%= link_to 'Destroy', @experience, method: :delete, data: { confirm: 'Are you sure?' } %>
 <%= link_to 'Back', experiences_path %>
