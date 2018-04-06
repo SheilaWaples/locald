@@ -1,5 +1,7 @@
 {
   "name": "locald",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "startbootstrap-full-slider": "^4.0.0"
+  }
 }

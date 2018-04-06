@@ -6,9 +6,11 @@
      <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
     <%= csrf_meta_tags %>
+     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   </head>
 
   <body>
@@ -21,12 +23,22 @@
         <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
         <% else %>
        <a href="/users/sign_in">Sign In</a></li> 
-        <%= link_to "Sign up now!",  new_user_registration_path%></li>
+        <%= link_to "Sign up now!",  new_user_registration_path%>
       </ul>
         <% end %>
 
 
 </div>
     <%= yield %>
+
+      </div>
+     
   </body>
+  <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Local'd 2018</p>
+      </div>
+    </footer>
 </html>
+
+
